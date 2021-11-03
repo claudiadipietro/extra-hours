@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraint"
+    tools:context=".activities.Horarios">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_guide1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_guide2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_guide3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_height="wrap_content"
+        android:id="@+id/calcularHoras"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintStart_toEndOf="@id/main_guide1"
+        app:layout_constraintEnd_toStartOf="@+id/main_guide2"
+        android:text="Calcular horas"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_baseline_calculate_24"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_height="wrap_content"
+        android:id="@+id/logout"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_guide3"
+        app:layout_constraintStart_toEndOf="@id/main_guide1"
+        app:layout_constraintEnd_toStartOf="@+id/main_guide2"
+        android:text="Cerrar sesión"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_baseline_access_time_24"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_height="wrap_content"
+        android:id="@+id/Salida"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/calcularHoras"
+        app:layout_constraintStart_toEndOf="@id/main_guide1"
+        app:layout_constraintEnd_toStartOf="@+id/main_guide2"
+        android:text="Salida"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_baseline_directions_run_24"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="10dp"
+        android:enabled="false"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_height="wrap_content"
+        android:id="@+id/Entrada"
+        android:layout_width="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Salida"
+        app:layout_constraintStart_toEndOf="@id/main_guide1"
+        app:layout_constraintEnd_toStartOf="@+id/main_guide2"
+        android:text="Entrada"
+        android:textColor="@color/black"
+        app:icon="@drawable/ic_baseline_login_24"
+        app:cornerRadius="20dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="1dp"
+        android:layout_marginBottom="10dp"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+    android:layout_marginTop="10dp"
+    >
+
+    <fragment
+        app:layout_constraintStart_toEndOf="@id/main_guide1"
+        app:layout_constraintEnd_toStartOf="@+id/main_guide2"
+        android:name="com.example.mishorasextras.Dias"
+        app:layout_constraintBottom_toTopOf="@+id/Entrada"
+        android:layout_width="250dp"
+        android:layout_height="470dp"
+        android:layout_marginBottom="10dp"
+        tools:layout="@layout/fragment_dias"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

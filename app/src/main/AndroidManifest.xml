@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mishorasextras">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mhe"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_mhe_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MisHorasExtras">
+        <activity
+            android:name=".alertDialogs.AlertDialogContrasena"
+            android:label="@string/title_activity_alert_dialog_contrasena"
+            android:theme="@style/Theme.MisHorasExtras.NoActionBar"></activity>
+        <activity android:name=".activities.Calendario" />
+        <activity android:name=".activities.Horarios" />
+        <activity android:name=".activities.Registro" />
+        <activity
+            android:name=".splash.SplashScreen"
+            android:theme="@style/SplashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.Login" />
+    </application>
+
+</manifest>

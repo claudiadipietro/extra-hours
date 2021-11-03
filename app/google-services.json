@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "84827163437",
+    "project_id": "mis-horas-extra-1ead2",
+    "storage_bucket": "mis-horas-extra-1ead2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84827163437:android:94226077ab1d8084dc21a4",
+        "android_client_info": {
+          "package_name": "com.example.mishorasextras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84827163437-hrd3h5qflrptpqft5bbnkeiesjvaega7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0Ks8cchzd44p_5ciMPHMMw68wonSAmdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84827163437-hrd3h5qflrptpqft5bbnkeiesjvaega7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

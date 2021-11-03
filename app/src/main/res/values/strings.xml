@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Mis horas extras</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="password_weak">La contraseña es muy débil</string>
+    <string name="error_registro">No se pudo registrar correctamente</string>
+    <string name="campo_nulo">El campo es nulo. Registrate o inicia sesión :)</string>
+    <string name="title_activity_alert_dialog_contrasena">AlertDialogContrasena</string>
+    <string name="error_horas">Hubo un error registrando las horas</string>
+    <string name="entrada_succesful">Se registró la entrada correctamente</string>
+    <string name="salida_succesful">Se registró la salida correctamente</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="error_entrada_salida_previa">Primero debes salir</string>
+</resources>
